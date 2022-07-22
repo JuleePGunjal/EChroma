@@ -27,6 +27,7 @@ public class Employee {
 	private String name;
 	@Column(length = 30)
 	private String department;
+	//adding JsonProperty annotation for displaying name in Json object
 	@JsonProperty("location")
 	@Column(length = 30)
 	private String workLocation;
